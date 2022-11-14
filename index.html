@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/style.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+
+  </head>
+  <body class="bg-off-white selection:bg-primary-soft-orange selection:text-off-white">
+
+    <div id="js-backdrop" class="invisible fixed w-full min-h-screen  bg-very-dark-blue opacity-30 backdrop-blur-md overflow-hidden z-10"></div>
+    <header class="container relative md:pt-8 flex items-center justify-between z-10 py-8 md:pb-14">
+      <a href="#">
+        <img src="/assets/images/logo.svg" alt="Logo">
+      </a>
+      <button id="js-open-menu-btn" class="md:hidden">
+        <img src="/assets/images/icon-menu.svg" alt="Open menu">
+      </button>
+      <div id="js-mobile-menu" class="invisible md:visible bg-off-white flex flex-col py-6 px-4 absolute right-0 top-0 w-4/6 min-h-screen md:relative md:min-h-0 md:py-0 md:px-0 md:flex-row md:justify-end">
+        <button id="js-close-menu-btn" class="self-end md:hidden">
+          <img src="/assets/images/icon-menu-close.svg" alt="Close menu">
+        </button>
+        <nav class="flex flex-col mt-28 md:flex-row md:mt-0 md:space-x-6">
+          <a href="#" class="py-2 text-dark-grayish-blue hover:text-primary-soft-orange">Home</a>
+          <a href="#" class="py-2 text-dark-grayish-blue hover:text-primary-soft-orange">New</a>
+          <a href="#" class="py-2 text-dark-grayish-blue hover:text-primary-soft-orange">Popular</a>
+          <a href="#" class="py-2 text-dark-grayish-blue hover:text-primary-soft-orange">Trending</a>
+          <a href="#" class="py-2 text-dark-grayish-blue hover:text-primary-soft-orange">Categories</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="container pb-10 md:pb-20 flex flex-col lg:flex-row lg:space-x-6">
+      <main class="flex flex-col mb-12 lg:mb-0 space-y-6">
+        <div class="flex w-full md:h-[19.1rem] relative">
+          <img class="md:hidden w-full" src="/assets/images/image-web-3-mobile.jpg" alt="Web3">
+          <img class="hidden md:block w-full object-cover object-center" src="/assets/images/image-web-3-desktop.jpg" alt="Web3">
+        </div>
+        <div class="flex flex-col items-start lg:flex-row">
+          <h1 class="text-4xl lg:text-5xl lg:font-extrabold font-bold lg:basis-0 lg:grow">The Bright <br> Future of <br class="hidden lg:block"> Web 3.0?</h1>
+          <div class="flex flex-col items-start lg:basis-0 lg:grow space-y-6">
+            <p class="text-dark-grayish-blue">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?
+            </p>
+            <a href="#" class="bg-primary-soft-red hover:bg-very-dark-blue text-off-white uppercase font-bold py-3 px-8">Read more</a>
+          </div>
+        </div>
+      </main>
+      <aside class="container py-3 bg-very-dark-blue flex flex-col space-y-10 lg:w-[50%] lg:min-h-full">
+        <h2 class="text-primary-soft-orange text-2xl font-bold">New</h2>
+        <article class="[&:not(:last-of-type)]:border-b border-b-dark-grayish-blue [&:not(:last-of-type)]:pb-10">
+          <a href="#">
+          <h3 class="text-off-white font-bold hover:text-primary-soft-orange">Hydrogen VS Electric Cars</h3>
+          <p class="text-dark-grayish-blue">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </a>
+        </article>
+        <article class="[&:not(:last-of-type)]:border-b border-b-dark-grayish-blue [&:not(:last-of-type)]:pb-10">
+          <a href="#">
+          <h3 class="text-off-white font-bold hover:text-primary-soft-orange">The Downsides of AI Artistry</h3>
+          <p class="text-dark-grayish-blue">What are the possible adverse effects of on-demand AI image generation?</p>
+        </a>
+        </article>
+        <article class="[&:not(:last-of-type)]:border-b border-b-dark-grayish-blue [&:not(:last-of-type)]:pb-10">
+          <a href="#">
+          <h3 class="text-off-white font-bold hover:text-primary-soft-orange">Is VC Funding Drying Up?</h3>
+          <p class="text-dark-grayish-blue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </a>
+        </article>
+      </aside>
+
+    </section>
+
+
+    <section class="container flex flex-col space-y-10 md:space-y-0 md:flex-row md:space-x-10">
+      <div class="flex space-x-4">
+        <div class="max-w-[30%] h-full bg-primary-soft-orange">
+          <img class="w-full h-full object-cover" src="/assets/images/image-retro-pcs.jpg" alt="" srcset="">
+        </div>
+
+        <div class="">
+          <span class="text-3xl font-bold text-grayish-blue">01</span>
+          <a href="#"><h3 class="text-very-dark-blue font-bold hover:text-primary-soft-red">Reviving Retro PCs</h3></a>
+          <p class="text-dark-grayish-blue ">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="flex space-x-4">
+        <div class="max-w-[30%] h-full bg-primary-soft-orange flex-none">
+          <img class="w-full h-full" src="/assets/images/image-top-laptops.jpg" alt="" srcset="">
+        </div>
+
+        <div class="">
+          <span class="text-3xl font-bold text-grayish-blue">02</span>
+          <a href="#"><h3 class="text-very-dark-blue font-bold hover:text-primary-soft-red">Top 10 Laptops of 2022</h3></a>
+          <p class="text-dark-grayish-blue ">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="flex space-x-4">
+        <div class="max-w-[30%] h-full bg-primary-soft-orange">
+          <img class="w-full h-full object-cover" src="/assets/images/image-gaming-growth.jpg" alt="" srcset="">
+        </div>
+
+        <div>
+          <span class="text-3xl font-bold text-grayish-blue">03</span>
+          <a href="#"><h3 class="text-very-dark-blue font-bold hover:text-primary-soft-red">The Growth of Gaming</h3></a>
+          <p class="text-dark-grayish-blue ">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-sm text-center pt-16 pb-3">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-primary-soft-orange hover:text-primary-soft-red">Frontend Mentor</a>. 
+    Coded by <a href="https://imfaroolle.com/" class="text-primary-soft-orange hover:text-primary-soft-red">Ahmed Faroolle</a>.
+  </div>
+
+  <script src="/script.js"></script>
+  </body>
+</html>
