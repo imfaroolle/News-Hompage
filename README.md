@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [imfaroolleNews homepage](https://imfaroolle-expenses-chart-component.netlify.app/)
+- Live Site URL: [imfaroolleNews homepage](https://imfaroolle-news-homepage.netlify.app/)
 
 ## Built with
 
