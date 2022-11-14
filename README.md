@@ -25,10 +25,10 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop
-![](./screenshots/desktop.png)
+![](./screenshots/desktop.jpg)
 
 #### Mobile
-![](./screenshots/mobile.png)
+![](./screenshots/mobile.jpg)
 
 ### Links
 
